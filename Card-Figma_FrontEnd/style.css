@@ -1,0 +1,90 @@
+:root{
+    /**Colors*/
+
+     /**Primary*/
+
+    --amarillo:hsl(47, 88%, 63%);
+ 
+     /**Neutral*/
+
+    --blanco: hsl(0, 0%, 100%);
+    --gris: hsl(0, 0%, 50%);
+    --negro: hsl(0, 0%, 7%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/**Sirve para que 1rem sea igual a 10px*/
+    
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+p{
+    font-size: 1.6rem;/**16px*/
+    color: var(--gris);
+}
+body{
+    font-family: "Figtree", sans-serif;
+    max-width: 100rem;
+    background-color: white; 
+}
+h1{
+    font-weight: 800;
+    color: var(--negro);
+}
+h1:hover{
+    color: var(--amarillo);
+    cursor: pointer;
+}
+h2{
+    font-weight: bold;
+    color: var(--negro);
+    background-color: var(--amarillo);
+    margin-right: 38rem;
+    text-align: center;
+    padding:1rem;
+    border-radius: 1rem;
+    font-size: 16px;
+}
+body div{
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+div.contendor_h2{
+    padding:0;
+}
+.fecha{
+    color: black;
+    font-weight: bold;
+}
+.logo{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+}
+.nombre{
+    color: var(--negro);
+    font-weight: 800;
+}
+.contenedor{
+    max-width: 50rem;
+    margin: 20rem auto; 
+}
+
+.sombra{
+    -webkit-box-shadow: 14px 10px 8px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 8px 10px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 8px 10px rgba(0,0,0,0.75);
+    background-color: var(--amarillo);
+    border-radius: 1rem;
+}
+.avatar{
+    padding-right:1rem;
+}
+.footer{
+    display: flex;
+    align-content: row;
+    justify-content: start;
+    align-items: center;
+}
