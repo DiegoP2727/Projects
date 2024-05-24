@@ -1,0 +1,237 @@
+:root{
+    /**Colors*/
+
+    /**Primary*/
+
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /**Neutral*/
+
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+/*?### Font
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700*/
+
+
+.fraunces¿{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/ /*500-700*/
+    font-style: normal;
+}
+/**Etiquetas*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Es para que no afecte el paddin al tamaño de px en totales*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Very_dark_blue);
+    font-size: 3rem;
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+    color: var(--Dark_grayish_blue);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--Dark_grayish_blue);
+    font-weight: 700;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: var(--Cream);
+}
+.imagen-escritorio{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+svg{
+    margin-right: 1rem;
+    font-weight: bold;
+}
+.imagen-celular{
+    display: none;/*Para que no se vea la imagen de celular*/
+}
+.boton a{
+    font-family: "Montserrat", sans-serif;
+    font: 700;
+}
+.attribution p{
+    color: black;
+}
+.atribucion{
+    color: blue;
+}
+.contenedor{
+    display: flex;
+    max-width: 120rem;
+    margin: 10rem auto;
+    justify-content: center;
+    align-items: center;
+}
+.mitad-derecha{
+    width: 25rem;/*Ancho*/
+    height: 40rem;/*Alto*/
+    padding: 2rem;
+    padding-left: 2rem;
+    background-color: var(--White);
+    border-radius: 0 1rem 1rem 0;
+    display: block;
+    margin: 1rem 0;
+    
+}
+.mitad-izquierda{
+    width: 25rem;/*Ancho*/
+    height: 40rem;/*Alto*/
+}
+.precio{
+    font-family: "Fraunces", serif;
+    font: 700;
+    color: var(--Dark_cyan);
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+.precio-tachado{
+    font-family: "Montserrat", sans-serif;
+    font: 500;
+    color: var(--Dark_grayish_blue);
+    text-decoration: line-through;
+}
+.boton{
+    background-color:#1A4031;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.precios{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media(max-width:600px){
+    h2{
+        font-family: "Montserrat", sans-serif;
+        color: var(--Dark_grayish_blue);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+        padding-top: 1.5rem;
+        margin-left: .5rem;
+    }
+    h1{
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        color: var(--Very_dark_blue);
+        font-size: 3rem;
+        margin: 0.5rem;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: var(--Dark_grayish_blue);
+        font-weight: 700;
+        font-style: normal;
+        margin: .5rem;
+    }
+    .precio{
+        font-family: "Fraunces", serif;
+        font: 700;
+        color: var(--Dark_cyan);
+        font-size: 2.2rem;
+        margin: 0;
+        font-weight: bold;
+        padding-right: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+    .precios{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: .5rem;
+        
+        
+    }
+    .contenedor{
+        max-width: 120rem;
+        margin: 10rem auto;
+        display: block;
+        justify-content: center;   
+        align-items: center; 
+        padding: 0 1rem
+    }
+    .imagen-celular{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .imagen-escritorio{
+        display:none;
+    }
+    .mitad-derecha{
+        width: 30rem;/*Ancho*/
+        height: 30rem;/*Alto*/
+        padding: 0 1rem;
+        background-color: var(--White);
+        border-radius: 0 0 1rem 1rem;
+        display: block;
+        margin: 0 3rem;
+        margin-bottom: 5rem;
+        padding-bottom: 30rem;
+        
+    }
+    .mitad-izquierda{
+        width: 30rem;/*Ancho*/
+        height: 20rem;/*Alto*/
+        margin: 0 3rem;
+    }
+    .boton{
+        background-color:#1A4031;
+        border-radius: 1rem;
+        padding: 1rem auto;
+        margin: 1rem auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
