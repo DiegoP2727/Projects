@@ -1,0 +1,97 @@
+:root{
+    /**Colors*/
+    /**Primary*/
+
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /**Neutral*/
+
+    --Very_dark_blue_1/*(main BG)*/: hsl(217, 54%, 11%);
+    --Very_dark_blue_2/*(card BG)*/: hsl(216, 50%, 16%);
+    --Very_dark_blue/*(line)*/: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --fuente_principal: "Outfit", sans-serif;
+}
+/*### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Es para que no afecte el paddin al tamaño de px en totales*/
+    background-color: var(--Very_dark_blue_1);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+p{
+    font-size: 1.8rem;
+    font-family: var(--fuente_principal);
+    color: var(--Soft_blue);
+    font-weight: 300;
+}
+h1{
+    font-family: var(--fuente_principal);
+    color: var(--White);
+    margin: 0;
+    font-weight: 600;
+}
+h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+h2{
+    font-family: var(--fuente_principal);
+    color: var(--Cyan);
+    font-weight: 600;
+}
+main{
+    background-color: var(--Very_dark_blue_2);
+    border-radius: 1rem;
+    max-width: 35rem;
+    max-height: 60rem;
+    margin: 5rem auto;
+}
+span{
+    color: var(--White);
+}
+.margin-left{
+    margin-left: 2.5rem;
+}
+.logo{
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 1rem;
+    margin:2.5rem;
+}
+.avatar{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+.columnas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__creacion{
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: solid .1rem hsl(215, 32%, 27%);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /*border-top: style width color;*/
+}
+.avatar{
+    border-radius: 50%;
+    border: solid .1rem white;
+    margin-right: 1rem;
+}
+.reloj__parrafo{
+    font-weight: 400;
+    margin-right: 2.5rem;
+}
