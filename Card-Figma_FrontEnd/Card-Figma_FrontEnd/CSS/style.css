@@ -1,0 +1,77 @@
+:root{
+    /**Colors*/
+
+     /**Primary*/
+
+    --amarillo:hsl(47, 88%, 63%);
+ 
+     /**Neutral*/
+
+    --blanco: hsl(0, 0%, 100%);
+    --gris: hsl(0, 0%, 50%);
+    --negro: hsl(0, 0%, 7%);
+    --principal: "Figtree", sans-serif; /*- Weights: 500, 800*/
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/**Sirve para que 1rem sea igual a 10px*/
+    
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    background-color: var(--amarillo);
+    font-family: var(--principal);
+}
+.logo_grande{
+    margin:1.5rem;
+    border-radius: 1.5rem;
+}
+h1{
+    font-weight: 800;
+}
+h3{
+    background-color: var(--amarillo);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+p{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.contenedor{
+    background-color: var(--blanco);
+    margin: 4rem auto;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    width:min-content ;
+    border: 1px solid var(--negro);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(18,18,18,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(18,18,18,1);
+    box-shadow: 10px 10px 0px 0px rgba(18,18,18,1);
+}
+.margin-left{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.gris{
+    color: var(--gris);
+}
+.w-800{
+    font-weight: 800;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.persona{
+    width: 20%;
+    margin-right: 1rem;
+}
