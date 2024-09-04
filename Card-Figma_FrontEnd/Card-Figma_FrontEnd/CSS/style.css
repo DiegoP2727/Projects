@@ -31,6 +31,10 @@ body{
 h1{
     font-weight: 800;
 }
+h1:hover{
+    color: var(--amarillo);
+    cursor: pointer;
+}
 h3{
     background-color: var(--amarillo);
     border-radius: 0.5rem;
